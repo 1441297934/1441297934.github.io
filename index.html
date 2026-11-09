@@ -1,234 +1,95 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>王一凡 | 人工智能 个人简历</title>
-    <style>
-        * {margin: 0; padding: 0; box-sizing: border-box;}
-        body {
-            font-family: "Microsoft Yahei", Arial, sans-serif;
-            background-color: #f3f4f6;
-            color: #333;
-            line-height: 1.6;
-            padding: 20px;
-        }
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            background: #fff;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
-        }
-        .header {
-            text-align: center;
-            margin-bottom: 30px;
-            border-bottom: 1px solid #eee;
-            padding-bottom: 20px;
-        }
-        .header h1 {font-size: 28px; color: #1a365d; margin-bottom: 10px;}
-        .contact {margin-top: 10px; font-size: 15px; color: #555;}
-        .section {margin: 25px 0;}
-        .section h2 {
-            font-size: 20px;
-            color: #1a365d;
-            border-left: 4px solid #1a365d;
-            padding-left: 10px;
-            margin-bottom: 15px;
-        }
-        .item {margin-bottom: 18px;}
-        .item-title {font-weight: bold; font-size: 16px;}
-        .item-time {color: #777; font-size: 14px;}
-        .item-content {font-size: 15px; margin-top: 5px; padding-left: 10px;}
-        .divider {height: 1px; background: #eee; margin: 30px 0;}
-        ul {padding-left: 20px; margin-top: 5px;}
-        .en-title {color: #666; font-size: 16px; margin: 40px 0 10px; text-align: center;}
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Yifan Wang, MSc student in Computer Engineering at the National University of Singapore. Research, projects, and experience.">
+  <title>Yifan Wang</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #f8fafc;
+      color: #172839;
+      font: 1rem/1.65 system-ui, "Microsoft YaHei", sans-serif;
+      overflow-wrap: anywhere;
+    }
+    main { width: min(100% - 2rem, 48rem); margin: 0 auto; padding: clamp(2rem, 7vw, 5rem) 0; }
+    header { padding-bottom: 1.75rem; }
+    h1, h2, h3, p { margin: 0; }
+    h1 { font-size: clamp(2rem, 6vw, 3.5rem); line-height: 1.2; }
+    h2 { font-size: 1.45rem; margin-bottom: 1rem; }
+    h3 { font-size: 1.06rem; }
+    p + p, h3 + p { margin-top: .35rem; }
+    a { color: #145d85; text-underline-offset: .18em; }
+    a:focus-visible { outline: 2px solid #145d85; outline-offset: 4px; }
+    section { border-top: 1px solid #cbd5e1; padding: 1.6rem 0; }
+    article + article { margin-top: 1.15rem; }
+    nav { display: flex; flex-wrap: wrap; gap: .5rem 1rem; margin-top: 1rem; }
+    .role { font-weight: 650; margin-top: .65rem; }
+    .intro { max-width: 42rem; margin-top: 1rem; }
+    .meta { color: #46586a; }
+    .paper { padding: 1rem 1.15rem; border-left: .25rem solid #145d85; background: #eaf2f8; }
+    .label { font-weight: 650; color: #285371; margin-bottom: .35rem; }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <!-- 中文简历部分 -->
-        <div class="header">
-            <h1>王一凡</h1>
-            <div class="contact">
-                电话：+86 15954219105 &nbsp;&nbsp;
-                邮箱：1441297934@qq.com / 202264690090@mail.scut.edu.cn
-            </div>
-        </div>
-
-        <div class="section">
-            <h2>教育背景</h2>
-            <div class="item">
-                <div class="item-title">华南理工大学（985） | 广东广州</div>
-                <div class="item-time">2022年09月 - 2026年06月（预计）</div>
-                <div class="item-content">
-                    主修人工智能，GPA：3.62/4.0 <br>
-                    专业课程：机器学习（88），深度学习与计算机视觉（86），数据结构（92），大数据及数据挖掘（93），大语言模型与人工智能工程设计（89），C++程序设计基础（92），高级语言程序设计（98），Python语言程序设计（86）
-                </div>
-            </div>
-        </div>
-
-        <div class="section">
-            <h2>实习经历</h2>
-            <div class="item">
-                <div class="item-title">广州凡岛网络科技有限公司 | AI技术实习生</div>
-                <div class="item-time">广东广州 | 2025年07月 - 09月</div>
-                <div class="item-content">
-                    <ul>
-                        <li>参与“KONO”“赫希”“WIS”产品线抖音（飞鸽）及天猫（千牛）AI客服项目开发及维护，独立设计并开发了售后场景“意图识别-RAG-工作流”的工作系统。</li>
-                        <li>在满意度保持90%以上的前提下，将平均响应时间从人工20ms+优化至AI 5ms，AI回复占比提升至80%+。</li>
-                        <li>熟练使用Flask框架、Redis、SQLalchemy数据库，掌握Git、K8s项目管理。</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="item">
-                <div class="item-title">青岛海瑞百川科技有限公司 | 技术部实习生</div>
-                <div class="item-time">山东青岛 | 2024年07月 - 09月</div>
-                <div class="item-content">
-                    <ul>
-                        <li>学习ARM芯片、STM32开发，掌握外设与中断管理，使用HAL库完成嵌入式编程。</li>
-                        <li>在ARM环境部署优化Dlib、Insightface人脸识别模型，开发活体检测项目（眼球追踪、眨眼检测、头部姿态估计）。</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="section">
-            <h2>项目经历</h2>
-            <div class="item">
-                <div class="item-title">EEE Big Data 2024 (华盛顿) 赛题研究 | 独立研究</div>
-                <div class="item-time">广东广州 | 2024年11月 - 2025年7月</div>
-                <div class="item-content">
-                    <ul>
-                        <li>社交媒体转发关系预测：基于SAGEConv、GCN构建GNN链接预测模型，融合拓扑特征，F1分数由73提升至77。</li>
-                        <li>多模态用户意图建模：搭建多模态信息蒸馏框架，使用LoRA微调Llama-3、InternLM2.5、Qwen2等大模型，BERTScore由85提升至90+。</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="item">
-                <div class="item-title">基于DNA序列数据的抗生素耐药性数据挖掘 | 成员</div>
-                <div class="item-time">广东广州 | 2024年10月 - 2024年11月</div>
-                <div class="item-content">
-                    结合树基算法、线性模型、注意力模型，利用Unitigs特征分析基因序列与耐药性关联，通过特征分析挖掘生物学机制。
-                </div>
-            </div>
-            <div class="item">
-                <div class="item-title">基于Qwen2、Audio2face和UE5的问诊虚拟人 | AI技术负责人</div>
-                <div class="item-time">广东广州 | 2024年11月 - 2025年01月</div>
-                <div class="item-content">
-                    <ul>
-                        <li>设计医学论文自动数据集生成方案，保障数据专业性与迁移能力。</li>
-                        <li>使用llamafactory微调Qwen2大模型适配问诊场景，搭建REST API + LiveLink完整实时交互架构。</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="item">
-                <div class="item-title">基于YOLO算法的交通标志识别与优化 | 团队成员</div>
-                <div class="item-time">2024年05月 - 06月</div>
-                <div class="item-content">
-                    基于YOLOv3/v5/v8结合Transformer、FPN、MobilenetV3优化模型，完成多数据集预处理，最终F1指标提升约15%。
-                </div>
-            </div>
-            <div class="item">
-                <div class="item-title">APMCM数学建模：图像数字化苹果采摘研究 | 队长</div>
-                <div class="item-time">2023年</div>
-                <div class="item-content">
-                    使用YOLOv5实现苹果检测、计数，像素坐标转换计算质心，掩码算法分析成熟度与质量，生成分布直方图。
-                </div>
-            </div>
-        </div>
-
-        <div class="section">
-            <h2>荣誉奖项</h2>
-            <div class="item-content">
-                <ul>
-                    <li>2025 年中国国际大学生创新大赛 国家级项目（进行中）</li>
-                    <li>2025 年“挑战杯”省级赛事，晋级国赛（进行中）</li>
-                    <li>2023 年 APMCM 亚太地区大学生数学建模竞赛 三等奖</li>
-                    <li>2023 年百度飞桨杯科技作品竞赛 二等奖</li>
-                    <li>2024 年第十四届 MathorCup 数学应用挑战赛 S 奖</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="section">
-            <h2>技能与语言</h2>
-            <div class="item-content">
-                <strong>技能：</strong>Python（Pytorch, Opencv, Numpy, Pandas），Redis，SQLalchemy，Matlab，C/C++，JAVA，Git，K8s <br>
-                <strong>语言：</strong>中文（母语），英语（流利，雅思7.0，CET-4/6）
-            </div>
-        </div>
-
-        <div class="divider"></div>
-
-        <!-- 英文简历部分 -->
-        <div class="en-title">English Resume</div>
-        <div class="header">
-            <h1>Yifan Wang</h1>
-            <div class="contact">
-                Phone: +86 15954219105 &nbsp;&nbsp;
-                Email: 1441297934@qq.com / 202264690090@mail.scut.edu.cn
-            </div>
-        </div>
-
-        <div class="section">
-            <h2>Educational Background</h2>
-            <div class="item">
-                <div class="item-title">South China University of Technology, Guangzhou</div>
-                <div class="item-time">Sep. 2022 - Present</div>
-                <div class="item-content">
-                    Major: Artificial Intelligence, GPA: 3.62/4.0 <br>
-                    Core Courses: Machine Learning, Deep Learning & CV, Data Structures, Big Data & Data Mining, LLM & AI Engineering, C/C++, Python
-                </div>
-            </div>
-        </div>
-
-        <div class="section">
-            <h2>Internship Experience</h2>
-            <div class="item">
-                <div class="item-title">AI Technology Intern, Fandao Network Technology Co., Ltd.</div>
-                <div class="item-time">Jul. 2025 - Sep. 2025</div>
-                <div class="item-content">
-                    Developed RAG & Intent Recognition workflow for AI customer service, reduced average response time to 5ms and raised AI response rate over 80%. Proficient in Flask, Redis, SQLalchemy, Git and K8s.
-                </div>
-            </div>
-            <div class="item">
-                <div class="item-title">Technical Intern, Hairuibaichuan Technology Co., Ltd.</div>
-                <div class="item-time">Jul. 2024 - Sep. 2024</div>
-                <div class="item-content">
-                    Developed embedded programs based on STM32 & HAL library; deployed and optimized face recognition models, implemented liveness detection functions.
-                </div>
-            </div>
-        </div>
-
-        <div class="section">
-            <h2>Project Experience</h2>
-            <div class="item-content">
-                <ul>
-                    <li><strong>EEE Big Data 2024 Research:</strong> Built GNN model for social media link prediction (F1:73→77); applied LoRA to fine-tune LLMs for multimodal intent modeling (BERTScore:85→90+).</li>
-                    <li><strong>Antibiotic Resistance Data Mining:</strong> Explored the correlation between gene sequences and drug resistance with multiple algorithms.</li>
-                    <li><strong>Medical Consultation Virtual Human:</strong> Fine-tuned Qwen2, built full system based on REST API, Audio2face and UE5.</li>
-                    <li><strong>Traffic Sign Detection:</strong> Optimized YOLO series models, F1 improved by 15%.</li>
-                    <li><strong>Apple Picking Visual Project:</strong> Applied YOLOv5 for object detection, coordinate conversion and quality analysis.</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="section">
-            <h2>Honors & Awards</h2>
-            <div class="item-content">
-                National Innovation Competition (2025), Challenge Cup (Provincial, qualified for national round), APMCM Third Prize (2023), Baidu Paddle Cup Second Prize (2023), MathorCup S Prize (2024)
-            </div>
-        </div>
-
-        <div class="section">
-            <h2>Professional Skills</h2>
-            <div class="item-content">
-                Python(Pytorch, OpenCV), C/C++, Java, Matlab, Flask, Redis, SQLalchemy, Git, K8s. <br>
-                Languages: Native Chinese, Fluent English (IELTS 7.0, CET-4/6)
-            </div>
-        </div>
-    </div>
+  <main>
+    <header>
+      <h1>Yifan Wang</h1>
+      <p class="role">MSc student in Computer Engineering · National University of Singapore</p>
+      <p class="intro">I study computer engineering at NUS and completed my undergraduate studies in artificial intelligence at South China University of Technology. My interests include multimodal learning, visual and spatial reasoning, and graph machine learning.</p>
+      <nav aria-label="Contact links">
+        <a href="mailto:1441297934@qq.com">1441297934@qq.com</a>
+        <a href="mailto:202264690090@mail.scut.edu.cn">202264690090@mail.scut.edu.cn</a>
+        <a href="https://github.com/1441297934">GitHub</a>
+      </nav>
+    </header>
+    <section aria-labelledby="research-en">
+      <h2 id="research-en">Research &amp; Projects</h2>
+      <article class="paper">
+        <p class="label">arXiv preprint · October 2026</p>
+        <h3><a href="https://arxiv.org/abs/2610.29375">Characterizing Social Media Behavior under Limited Observability: Retweet Link Prediction and Multimodal Intention Recognition</a></h3>
+        <p class="meta"><strong>Yifan Wang</strong>, Chenwei Wang</p>
+        <p>We compare graph models for predicting retweet links in sparse networks and evaluate LoRA fine-tuning for inferring user intentions from posts that combine text and images.</p>
+      </article>
+      <article>
+        <h3>Virtual assistant for medical consultations</h3>
+        <p>Fine-tuned Qwen2 and connected it to a real-time avatar built with Audio2Face and Unreal Engine 5.</p>
+      </article>
+      <article>
+        <h3>Antibiotic resistance from DNA sequences</h3>
+        <p>Compared tree-based, linear, and attention models using unitig features to study associations between sequence variation and resistance.</p>
+      </article>
+      <article>
+        <h3>Traffic sign detection</h3>
+        <p>Compared and adapted YOLO architectures for traffic sign detection across multiple datasets.</p>
+      </article>
+    </section>
+    <section aria-labelledby="education-en">
+      <h2 id="education-en">Education</h2>
+      <article>
+        <h3>National University of Singapore</h3>
+        <p class="meta">MSc in Computer Engineering · In progress</p>
+      </article>
+      <article>
+        <h3>South China University of Technology</h3>
+        <p class="meta">Undergraduate studies in Artificial Intelligence · 2022–2026</p>
+      </article>
+    </section>
+    <section aria-labelledby="experience-en">
+      <h2 id="experience-en">Experience</h2>
+      <article>
+        <h3>AI Technology Intern · Fandao Network Technology</h3>
+        <p class="meta">July–September 2025</p>
+        <p>Built an after-sales support workflow combining intent classification, retrieval-augmented generation, and workflow routing for e-commerce customer service.</p>
+      </article>
+      <article>
+        <h3>Technical Intern · Hairuibaichuan Technology</h3>
+        <p class="meta">July–September 2024</p>
+        <p>Developed STM32 firmware and worked on ARM-based face recognition and liveness detection.</p>
+      </article>
+    </section>
+  </main>
 </body>
 </html>
